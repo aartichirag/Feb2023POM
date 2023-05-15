@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="QA Boat App Regression Suite" thread-count="4" parallel="tests" verbose="4">
+<!-- Thread-count means depends on how many test put on the thread-count -->
+	<listeners>
+		<listener class-name="com.qa.qaboat.listeners.ExtentReportListener" />
+	</listeners>
+	
+	<test name="QA Boat Login Page Test">
+		<classes>
+			<class name="com.qa.qaboat.tests.LoginPageTest" />
+		</classes>
+	</test>
+ 
+	<test name="QA Boat Accounts Page Test">
+		<classes>
+			<class name="com.qa.qaboat.tests.AccountsPageTest" />
+		</classes>
+	</test> 
+	
+	<test name="QA Boat Search Results Page Test">
+		<classes>
+			<class name="com.qa.qaboat.tests.SearchResultsPageTest" />
+		</classes>
+	</test>
+	
+	<test name="QA Boat Product Deatils Page Test">
+		<classes>
+			<class name="com.qa.qaboat.tests.ProductDetailsPageTest" />
+		</classes>
+	</test>
+</suite>

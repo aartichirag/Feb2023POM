@@ -27,3 +27,4 @@ test-output/
 
 # Locally stored "Eclipse launch configurations"
 *.launch
+/target/

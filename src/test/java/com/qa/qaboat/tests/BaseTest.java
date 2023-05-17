@@ -14,6 +14,7 @@ import org.testng.annotations.BeforeTest;
 
 import com.qa.qaboat.factory.DriverFactory;
 import com.qa.qaboat.pages.AccountsPage;
+import com.qa.qaboat.pages.HomePage;
 import com.qa.qaboat.pages.LoginPage;
 import com.qa.qaboat.pages.ProductDetailsPage;
 import com.qa.qaboat.pages.SearchResultsPage;
@@ -23,6 +24,7 @@ public class BaseTest {
 	DriverFactory df; 
 	Properties prop;
 	ChromeDriver driver;
+	HomePage homePage;
 	LoginPage loginPage;
 	AccountsPage accountsPage;
 	SearchResultsPage searchResultsPage;
@@ -58,7 +60,8 @@ public class BaseTest {
 		driver.get(prop.getProperty("url")); //this url is config.properties
 		driver.manage().window().maximize();
 		
-		loginPage = new LoginPage(driver);
+//		loginPage = new LoginPage(driver);
+		homePage = new HomePage(driver);
 	
 	}
 	

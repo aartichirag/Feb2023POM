@@ -17,7 +17,7 @@ public class ProductDetailsPage {
 		}
 			
 		//3.By locators
-		private By ProductSkuText = By.xpath("//div[contains(@class, 'details-info-bottom' )]//ul/li[contains(text(), 'PUYNR7RX' )]");	
+//		private By ProductSkuText = By.xpath("//div[contains(@class, 'details-info-bottom' )]//ul/li[contains(text(), 'PUYNR7RX' )]");	
 		
 			
 		//4. page actions
@@ -29,9 +29,9 @@ public class ProductDetailsPage {
 			return driver.getCurrentUrl();
 		}
 		
-		public boolean getProductSkuText() {
-			return driver.findElement(ProductSkuText).isDisplayed();
-		}
+//		public boolean getProductSkuText() {
+//			return driver.findElement(ProductSkuText).isDisplayed();
+//		}
 		
 //		public boolean getProductSku() {
 //			return driver.equals(getProductSku());

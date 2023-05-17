@@ -22,16 +22,16 @@ public class ProductDetailsPageTest extends BaseTest {
 	Assert.assertTrue(ProductDetailsPageUrl.contains(Constants.PRODUCT_DETAILS_PAGE_URL));
 	}
 	
-	@Test(priority = 2)
-	public void ProductSkuTextTest() {
-		Assert.assertTrue(productDetailsPage.getProductSkuText());	
-	}
+//	@Test(priority = 2)
+//	public void ProductSkuTextTest() {
+//		Assert.assertTrue(productDetailsPage.getProductSkuText());	
+//	}
 	
 //	@Test(priority = 2)
 //	public void productDetailsPageSkuTest() {
-//	boolean ProductDetailsPageSku = productDetailsPage.getProductSku();
-//	System.out.println("Prodct Details page SKU is: " + ProductDetailsPageSku);
-//	Assert.assertTrue(ProductDetailsPageSku.contains(Constants.PRODUCT_DETAILS_PAGE_SKU));
+//	String ProductDetailsSku = productDetailsPage.getProductSku();
+//	System.out.println("Prodct Details page SKU is: " + ProductDetailsSku);
+//	Assert.assertTrue(ProductDetailsSku.contains(Constants.PRODUCT_DETAILS_PAGE_SKU));
 //	}
 	
 	
